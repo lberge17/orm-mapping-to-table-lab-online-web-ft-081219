@@ -42,7 +42,7 @@ class Student
   
   def self.create(attribute_hash)
     student = Student.new
-    attribute_hash.each{|k, v| student.send("#{k}=", v)
+    attribute_hash.each{|k, v| student.send("#{k}=", v)}
     student.save
     student
   end
