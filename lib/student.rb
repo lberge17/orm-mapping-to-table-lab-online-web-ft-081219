@@ -44,6 +44,7 @@ class Student
     student = Student.new
     attribute_hash.each{|k, v| student.send("#{k}=", v)
     student.save
+    student
   end
   
 end
