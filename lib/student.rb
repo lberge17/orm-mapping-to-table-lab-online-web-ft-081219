@@ -30,7 +30,9 @@ class Student
   end
   
   def save
-    
+    sql = <<-SQL
+      INSERT INTO IF EXISTS students
+      SQL
   end
   
 end
